@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210630/pngtree-abstract-background-pink-and-green-colours-image_733779.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-box {
+    max-width: 300px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid gray 2px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    color: #010101;
+    background-color: lightgreen;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+}
+
+.input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 35px;
+    width: 100%; /* Make the input width 100% */
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+    padding: 8px 15px;
+    transition: .3s ease-in-out;
+}
+
+.input:hover {
+    border: solid grey 1px;
+    border-radius: 15px;
+}
+
+.form-section {
+    padding: 16px;
+    font-size: .85rem;
+    background-color: lightcoral;
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+    font-weight: bold;
+    color: #0066ff;
+    transition: color .3s ease;
+}
+
+.form-section a:hover {
+    color: #005ce6;
+    text-decoration: none;
+}
+
+.form button {
+    background-color: rgb(32, 132, 172);
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.form button:hover {
+    background-color: rgb(29, 177, 29);
+    color: black;
+}
+img{
+    height: 40px;
+    width: 40px;
+    border:solid whitesmoke 1px;
+    border-radius: 50%;position: relative;
+    top: 10px;
+    right: 5px;
+}

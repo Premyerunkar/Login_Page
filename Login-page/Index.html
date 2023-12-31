@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="formApp">
+    <div class="form-box" ng-controller="formController">
+        <form class="form" name="myForm" novalidate>
+            <span class="title"><img src="https://i0.wp.com/shop.blunt.one/wp-content/uploads/2020/07/ford_escort.jpg?fit=800%2C800&ssl=1" alt="logo">Escort</span>
+            <span class="subtitle">Get a Free 7 days &#127925; Trial.</span>
+            <div class="form-container">
+                <input type="text" id="name" name="name" ng-model="user.fullName" required class="input"
+                    placeholder="Full Name">
+                <span ng-show="myForm.name.$dirty && myForm.name.$error.required">This field is required</span><br>
+                <input type="email" class="input" placeholder="Email">
+                <input type="password" class="input" placeholder="Password">
+            </div>
+            <button ng-click="submitForm()" ng-disabled="myForm.$invalid">Sign up</button>
+        </form>
+        <div class="form-section">
+            <h2><p ng-show="submitted">Glad to see you back</p></h2>
+            <p>Have an account? <a href="login.html">Log in</a> </p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
